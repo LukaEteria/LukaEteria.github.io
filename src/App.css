@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif; /* ფონტის სტილი */
+  margin: 0; /* მარცხნივ და ზედა სივრცეების გამორთვა */
+  background-color: #eef2f3; /* ფონური ფერი */
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* მენიუს სტილი */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #343a40, #495057);
+  color: #fff;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1;
+  transition: transform 0.3s ease; /* ტრანსფორმაციის ეფექტი */
+}
+
+/* მენიუს ელემენტები */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  position: relative;
+  margin: 15px 0;
+  transition: padding-left 0.3s ease; /* Padding-ის ეფექტი */
+}
+
+/* მენიუს ღილაკები */
+.sidebar button {
+  text-decoration: none;
+  color: #fff; /* თეთრი ტექსტი */
+  padding: 10px;
+  display: block;
+  background: none; /* გამორთული ფონური ფერი */
+  border: none; /* გამორთული საზღვარი */
+  cursor: pointer; /* მაუსის კურსორი */
+  width: 100%; /* სრულ სიგანეზე */
+  border-radius: 4px; /* გლუვი კუთხეები */
+  transition: background-color 0.3s ease; /* ფონური ფერის ეფექტი */
+}
+
+/* მენიუს ღილაკების ჰოვერის ეფექტი */
+.sidebar button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* ფონის ცვლილება ჰოვერის დროს */
+}
+
+/* მარცხნივ ხაზების სტილი */
+.left-line {
+  position: absolute;
+  left: -5px; /* მარცხნივ, რომ ცოტა ახლოს იყოს */
+  top: 50%; /* ცენტრში */
+  transform: translateY(-50%); /* ვერტიკალური ცენტრი */
+  height: 8px; /* ხაზის სიმაღლე */
+  width: 0; /* საწყისი სიგანე */
+  background-color: #fff; /* ხაზის ფერი */
+  transition: width 0.3s ease; /* გასვლების ეფექტი */
+}
+
+/* აქტიური ელემენტის ხაზის სტილი */
+.sidebar li.active .left-line {
+  width: 15px; /* აქტიური ელემენტის ხაზის სიგანე */
+}
+
+/* აქტიური ელემენტის სტილი */
+.sidebar li.active {
+  padding-left: 20px; /* Padding-ის ზრდა */
+}
+
+/* შინაარსის სტილი */
+.content {
+  margin-left: 250px; /* მენიუს სივრცე */
+  padding: 20px; /* Padding */
+  width: calc(100% - 250px); /* შინაარსის სიგანე */
+}
+
+/* სექციების სტილი */
+section {
+  width: 100%;
+  padding: 100px 20px;
+  height: fit-content; /* სრული სიმაღლე */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #343a40, #495057); /* მენიუს ფერები */
+  color: #f8f9fa; /* ნათელი ტექსტის ფერი */
+  border-radius: 8px; /* გლუვი კუთხეები */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ჩრდილი */
+}
+
+
+/* Footer-ის სტილი */
+footer {
+  padding: 20px; /* Padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #495057; /* მუქი ფონური ფერი */
+  color: #ecf0f1; /* ძალიან ღია ტექსტი */
+  position: relative; /* არც ფიქსირებული */
+  margin-top: 20px; /* მენიუს ქვემოთ მდებარეობა */
+  border-radius: 8px; /* გლუვი კუთხეები */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* ჩრდილი */
+  font-size: 14px; /* ტექსტის ზომა */
+}
+
+/* Footer-ის ლინკების სტილი */
+footer a {
+  color: #ecf0f1; /* ძალიან ღია ფერი */
+  text-decoration: none; /* ხაზების გამორთვა */
+  margin: 0 10px; /* მარჯვენა და მარცხენა მარნის სივრცე */
+  transition: color 0.3s; /* ფერის ეფექტი */
+}
+
+/* Footer-ის ლინკების ჰოვერის სტილი */
+footer a:hover {
+  color: #f39c12; /* ოქროსფერი ფერი ჰოვერის დროს */
+}
+
+/* აქ არის პროექტები */
+#projects {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.rectangle {
+  background-color: #ffffff;
+  width: 100%; /* შეიცვალეთ 300px-დან 100%-ში, რომ იპოვოს მაქსიმალური სიგანე */
+  height: 200px; /* ან მიაწვდეთ რჩეული სიმაღლე */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative; 
+}
+
+.rectangle img {
+  width: 100%; /* სურათს მიაწვდეთ 100% სიგრძე */
+  height: 100%; /* სურათის სიმაღლე 100% */
+  object-fit: cover; /* სურათის ზომის რეგულირება ისე, რომ სრულად შეავსოს div */
+}
+
+/* პროექტის აღწერის სტილი */
+.description {
+  position: absolute; /* გამყოფი ზემოდან */
+  bottom: 0; /* ქვედა ნაწილში */
+  background-color: rgba(0, 0, 0, 0.7); /* ნახევრად გამჭირვალე ფონური ფერი */
+  color: white; /* ტექსტის ფერი */
+  padding: 10px; /* Padding */
+  display: none; /* საწყისი მდგომარეობა */
+  width: 100%; /* სიგანე 100% */
+  text-align: center; /* ტექსტის ცენტრირება */
+}
+
+/* ჰოვერის დროს აღწერის გამოჩენა */
+.rectangle:hover .description {
+  display: block; /* აღწერის გამოჩენა */
+}
+
+#home, #contact, #about {
+  height: 100vh; /* ეკრანის სრული სიმაღლე */
+  display: flex; /* ცენტრირება */
+  flex-direction: column; /* ვერტიკალური კომპოზიცია */
+  align-items: center; /* ჰორიზონტალური ცენტრირება */
+}
+
+.hamburger{
+  display: none;
+  background: none;
+  color: #ecf0f1;
+  font-size: 35px;
+  position:static;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* სრული ხედვის სიმაღლე */
+  background-color: #f9f9f9; /* ფონური ფერი */
+  color: #333; /* ტექსტის ფერი */
+  font-family: 'Arial', sans-serif; /* ფონტის ტიპი */
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

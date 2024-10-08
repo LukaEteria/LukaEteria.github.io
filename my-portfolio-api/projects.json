@@ -1,0 +1,23 @@
+[
+    {
+      "link": "https://example.com/project1",
+      "image": "https://raw.githubusercontent.com/LukaEteria/luka/master/src/assets/3.png",
+      "description": "This is a description for Project 1."
+    },
+    {
+      "link": "https://example.com/project1",
+      "image": "https://raw.githubusercontent.com/LukaEteria/luka/master/src/assets/6.png",
+      "description": "This is a description for Project 1."
+    },
+    {
+      "link": "https://example.com/project1",
+      "image": "https://raw.githubusercontent.com/LukaEteria/Bank-card/main/card.png",
+      "description": "I designed a modern bank card that blends style and security. With customizable options and exclusive benefits, it enhances your banking experience while making a statement in your wallet.."
+    },
+    {
+      "link": "https://example.com/project1",
+      "image": "https://raw.githubusercontent.com/LukaEteria/Bank-card/main/card.png",
+      "description": "I designed a modern bank card that blends style and security. With customizable options and exclusive benefits, it enhances your banking experience while making a statement in your wallet.."
+    }
+    
+  ]

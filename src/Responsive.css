@@ -1,0 +1,40 @@
+@media (max-width: 1292px) {
+    .home-paragraph, .about-paragraph {
+        backdrop-filter: none;
+    }
+    .content {
+        padding: 0px; 
+    }
+}
+@media (max-width: 1032px) {
+    .rectangle img {
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+   
+    .sidebar {
+      display: none; /* Hide sidebar on small screens */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger button */
+      position: fixed;
+      z-index: 1;
+    }
+  
+    .sidebar.active {
+      display: block; /* Show sidebar when active */
+      position: fixed; /* Keep it fixed */
+    }
+  
+    .content {
+      width: 100%; /* Full width for content */
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+        width: 100%;
+        height: fit-content;
+    }
+  }

@@ -1,0 +1,219 @@
+.about-section {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* უფრო გამოკვეთილი ჩრდილი */
+    position: relative; 
+    overflow: hidden; 
+    background: linear-gradient(135deg, #343a40, #495057); /* მენიუს ფერები */
+    color: #f8f9fa; /* ნათელი ტექსტის ფერი */
+}
+
+  
+  .about-title {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px; /* სივრცე სათაურის ქვემოთ */
+  }
+  
+  .about-paragraph {
+    font-size: 1.2em; /* პარაგრაფის ზომა */
+    line-height: 1.6; /* ტექსტის შორის სივრცე */
+    color: #f8f8f8; /* ტექსტის ფერი */
+    background-color: rgba(255, 255, 255, 0.1); /* ნახევრად გამჭვირვალე ფონური ფერი */
+    backdrop-filter: blur(10px); /* ფონური შუშის ეფექტი */
+    padding: 15px; /* Padding */
+    margin: 10px 0; /* Margin */
+    border-radius: 10px; /* გლუვი კუთხეები */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* ჩრდილი */
+    transition: transform 0.3s; /* ტრანზიციის ეფექტი */
+  }
+  
+  .about-paragraph:hover {
+    transform: scale(1.02); /* გაწელვა ჰოვერის დროს */
+  }
+  
+  
+
+  .home-section {
+    padding: 20px; /* სივრცე */
+    background-color: rgba(249, 249, 249, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* ეს გადააწყობს სექციის შინაარსის და ისარის შორის */
+    min-height: 100vh; /* მინიმალური სიმაღლე */
+    background-image: url('https://i.ibb.co/DDqFF0H/5177978.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+  .home-title {
+    font-size: 2.5em; /* სათაურის ზომა */
+    color: #fdfdfd; /* ტექსტის ფერი */
+    margin-bottom: 20px; /* სივრცე სათაურის ქვემოთ */
+  }
+  
+  .home-paragraph {
+    font-size: 1.2em; /* პარაგრაფის ზომა */
+    line-height: 1.6; /* ტექსტის შორის სივრცე */
+    color: #f8f8f8; /* ტექსტის ფერი */
+    background-color: rgba(255, 255, 255, 0.1); /* ნახევრად გამჭვირვალე ფონური ფერი */
+    backdrop-filter: blur(10px); /* ფონური შუშის ეფექტი */
+    padding: 15px; /* Padding */
+    margin: 10px 0; /* Margin */
+    border-radius: 10px; /* გლუვი კუთხეები */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* ჩრდილი */
+    transition: transform 0.3s; /* ტრანზიციის ეფექტი */
+  }
+  
+  .home-paragraph:hover {
+    transform: scale(1.02); /* გაწელვა ჰოვერის დროს */
+  }
+  
+
+  .down-arrow {
+    display: block;
+    margin: 20px auto 0; /* ზედა სივრცე, ცენტრში */
+    cursor: pointer;
+    width: 100px; /* ახალი სიგანე */
+    height: 100px; /* ახალი სიმაღლე */
+   
+  }
+  
+  .down-arrow svg {
+    width: 100%; /* სიგანე 100% -ზე, რათა მშვენივრად დაეტიოს */
+    height: 100%; /* სიმაღლე 100% -ზე */
+    transition: transform 0.3s, fill 0.3s; /* ფერის ტრანზიცია */
+  }
+  
+  .down-arrow:hover svg {
+    transform: scale(1.1); /* გაწელვა ჰოვერის დროს */
+    fill: #ffffff; /* ჰოვერის დროს ფერის შეცვლა (მაგალითად, წითელი) */
+  }
+
+  
+.container-skillbar {
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: auto;
+    overflow: hidden; /* შეცვლილი overflow */
+  }
+  
+  .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #efefef;
+    height: 30px;
+    border-radius: 3px;
+    transition: 0.4s linear; /* შედგენილი ტრანსიაცია */
+    transition-property: width, background-color;
+  }
+  
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .skillbar-bar {
+    height: 30px;
+    width: 0px;
+    border-radius: 3px;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  progress::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  progress::-webkit-progress-value {
+    background: #4caf50; /* მწვანე ფერი */
+  }
+  
+
+
+  .contact-form {
+    padding: 0px 15px;
+  }
+  
+  .form-control {
+    border: 2px solid rgba(0, 0, 0, 0.27);
+    width: 100%;
+    max-width: 100%;
+    height: 3em;
+    font-size: 16px;
+    padding: 1em;
+    margin: 0.5em 0 2em 0;
+    font-weight: bold;
+  }
+  
+  textarea {
+    min-height: 10em;
+  }
+  
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  #submit {
+    outline: none;
+    padding: 12px;
+    min-width: 200px;
+    border-radius: 2px;
+    border: 2px solid #ff6363;
+    text-align: center;
+    font-size: 1em;
+    color: #ff6363;
+    background-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #submit:hover {
+    background-color: #ff6363;
+    color: white;
+    transition: all 0.3s ease-out;
+  }
+  
