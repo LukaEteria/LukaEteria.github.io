@@ -19,7 +19,7 @@ const Menu = ({ currentSection }) => {
   return (
     <>
       <button className="hamburger" onClick={toggleMenu}>
-        &#9776;
+        &#9776; {/* Hamburger icon */}
       </button>
       <nav className={`sidebar ${isMenuOpen ? 'active' : ''}`}>
         <h1>My Projects</h1>
